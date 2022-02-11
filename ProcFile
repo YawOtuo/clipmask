@@ -1,1 +1,1 @@
-web: gunicorn clipmask.wsgi --log-file -
+web: gunicorn clipmask clipmask.wsgi --log-file -
