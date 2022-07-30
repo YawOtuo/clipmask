@@ -36,13 +36,27 @@
 }
 
 .clipmask{
-
+/* 
     z-index: 2;
-    position: relative;
-    /* background-color: var(--black); */
+    background-color: var(--black); */
 
 }
 
+@media screen and (max-width:770px)
+
+{
+    .img_resp{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:770px)
+
+{
+    .img_resp{
+        width: 100%;
+    }
+}
 
 
 
@@ -293,7 +307,7 @@
     
     /* color: white; */
     font-weight: 400;
-    border-bottom: 1px solid var(--yellow) ;
+    /* border-bottom: 1px solid var(--yellow) ; */
   
     
     
