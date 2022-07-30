@@ -28,7 +28,7 @@
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: var(--black);
+    /* background-color: var(--black); */
     
     /* color: var(--yellow); */
  
@@ -171,6 +171,7 @@
     .clipmask_big{
         font-weight: 600;
         color: #ffd000;
+        font-size: 2rem;
     }
 
 }
