@@ -1,32 +1,26 @@
 window.onload = (event) => {
     console.log('window loaded')
 
-    getWavePosition();
-    getClipMaskBlobPosition()
-    shiftClipBlob()
+
+    // animation("homepic")
+    // onmouseenter_animate('clipmask', 'offer_container')
+    
 }
 
-    clip_blob= document.clip_blob
-
-function getWavePosition(){
-    wave = document.querySelector('.wave')
-    console.log('wave', wave)
-    window.wave_rect = wave.getBoundingClientRect()
-    console.log(wave_rect)
+const animation = (class_) => {
+    $(`.${class_}`).css('display', 'none')
+    $(`.${class_}`).slideDown(1000)
+    console.log('here')
 }
 
+const onmouseenter_animate = (enter,animate) => {
+    $(`.${animate}`).css('display', 'none')
 
-function getClipMaskBlobPosition(){
-    clip_blob = document.querySelector('.clipmask_blob')
-    window.clip_blob_rect = clip_blob.getBoundingClientRect()
-    console.log(clip_blob_rect)
-}
+    // $(`.${enter}`).css('display', 'none')
+    $(`.${enter}`).mouseover(
+        
+        () => $(`.${animate}`).slideDown(1000)
+    )
 
-function shiftClipBlob(){
-    let top = window.wave_rect.y + window.wave_rect.height / 2
-    console.log('newtio', top)
-    clip_blob.style.y = top.toString() + 'px'
-    clip_blob.style.color = 'red'
-    console.log(window.wave_rect.y.toString())
-    console.log('clipbob style',clip_blob.style.y)
+   
 }
