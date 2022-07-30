@@ -23,6 +23,16 @@
     background-color: white;
 }
 
+.graphic{
+    background-image: url('/static/michael/man-sitting2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.bg_grad{
+    background-image: linear-gradient(to right, red,yellow);
+}
 .home{
     background-image: url('/static/michael/wave-haikei4.png');
     background-position: right;
@@ -36,9 +46,7 @@
 }
 
 .clipmask{
-/* 
-    z-index: 2;
-    background-color: var(--black); */
+    /* background-image: radial-gradient(rgb(182, 193, 58), #d0d0d0, white); */
 
 }
 
@@ -68,13 +76,12 @@
     }   
     }
 .solutions{
-    /* background-image: url('/static/michael/blob-scene-haikei.png');
-    background-position: right;
+    background-image: url('/static/michael/waves1.svg');
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
     color: var(--yellow);
     padding: 3%;
-    font-weight: 500;
 
 }
 
@@ -85,6 +92,8 @@
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover; */
+    font-weight: 400;
+
     background-color: #d9d9d9;
 }
 
@@ -179,6 +188,7 @@
 .clip_h3{
     color: var(--yellow);
     color: black;
+    font-weight: 400;
 }
 
 /* @media screen and (max-width: 400px) {
