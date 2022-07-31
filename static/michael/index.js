@@ -3,8 +3,18 @@ window.onload = (event) => {
 
 
     // animation("homepic")
-    // onmouseenter_animate('clipmask', 'offer_container')
-    
+    wow = new WOW(
+        {
+          animateClass: 'animated',
+          offset:       100,
+          callback:     function(box) {
+            console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+          }
+        }
+      );
+      wow.init();
+
+
 }
 
 const animation = (class_) => {
@@ -13,11 +23,11 @@ const animation = (class_) => {
     console.log('here')
 }
 
-const onmouseenter_animate = (enter,animate) => {
-    $(`.${animate}`).css('display', 'none')
+const onmouseenter_animate = (class1,class2) => {
+    $(`.${class2}`).css('display', 'none')
 
     // $(`.${enter}`).css('display', 'none')
-    $(`.${enter}`).mouseover(
+    $(`.${class1}`).mouseover(
         
         () => $(`.${animate}`).slideDown(1000)
     )

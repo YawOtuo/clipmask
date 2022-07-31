@@ -320,6 +320,10 @@ body {
 .box_shadow{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+.placebehind{
+    z-index: -3;
+}
+.wow { visibility: hidden; }
 .offer{
     
     /* color: white; */

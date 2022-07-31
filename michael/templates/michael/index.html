@@ -17,6 +17,9 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   <link rel="stylesheet" href="{% static 'michael/animate.css' %}">
+  <link rel="stylesheet" href="{% static 'michael/wowjs/css/site.css' %}">
+  <link rel="stylesheet" href="{% static 'michael/wowjs/css/libs/animate.css' %}">
+
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
@@ -30,7 +33,9 @@
   <script src="jquery-3.6.0.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-  <script src="{% static 'michael/index.js' %}"></script>
+  <script src="{% static 'michael/index.js' %}"></script>  
+  <script src="{% static 'michael/wowjs/dist/wow.js' %}"></script>
+
 
 </head>
 
@@ -79,7 +84,7 @@
 
 
       <div class="col-sm-5  col-md-5 animate__animated animate__fadeInDown animate__slower mt-3">
-        <img src="{% static 'michael/hung1-removebg-preview.png' %}" class="img-fluid img-responsive"></img>
+        <img src="{% static 'michael/hung1-removebg-preview.png' %}" class="img-fluid img-responsive placebehind"></img>
 
       </div>
 
@@ -90,12 +95,12 @@
 
 
   <!-- <div class="row align-items-center justify-content-center my-5 py-5"> -->
-    <div class="container-fluid clipmask my-3 py-5">
-      <div class="row align-items-center justify-content-center box_shadow py-5 ">
-        <div class="col-sm-4">
+    <div class="container-fluid clipmask my-3 py-5 wow slideInDown fadeIn" data-wow-duration="3s">
+      <div class="row align-items-center justify-content-center box_shadow py-5 py ">
+        <div class="col-sm-4 ">
           <img src="{% static 'michael/man-sitting.png' %}" class="img_resp"></img>
         </div>
-        <div class="col-sm-5 ">
+        <div class="col-sm-5">
           <div class="clip_h3_div text-center text-md-left">
             <h3 class="text-uppercase text-black fw-400">ClipMask</h3>
             <h5 class=" text-capitalize fw-400">Your graphic designing solutions</h5>
@@ -110,18 +115,18 @@
 
 
 
-    <div class="container-fluid mt-0 py-5 d9">
+    <div class="container-fluid mt-0 py-5 d9 wow  fadeIn" data-wow-duration="2s">
       <div class="row  align-items-center justify-content-center py-2 text-center">
-        <h1 class="text-uppercase offer_row px-5 px-md-5 text-warning text-decoration-underline">What we Offer</h1>
+        <h3 class="text-uppercase offer_row px-5 px-md-5 text-warning text-decoration-underline">What we Offer</h3>
       </div>
 
-      <div class="row  align-items-center justify-content-center">
+      <div class="row  align-items-center justify-content-center wow  fadeIn" data-wow-duration="3s">
         <div class="col-sm-3 col-md-3 offer my-3 py-3 mb-sm-3 box_shadow">
           <p class="text-uppercase"> Adverts</p>
           <img src="{% static 'michael/ads.png' %}" class="img_resp w-50"></img>
 
         </div>
-        <div class="col-sm-3 col-md-3 offer my-3 py-3 mb-sm-3 box_shadow">
+        <div class="col-sm-3 col-md-3 offer my-3 py-3 mb-sm-3 box_shadow wow  fadeIn" data-wow-duration="3s">
           <p class="text-uppercase"> FLyers</p>
           <img src="{% static 'michael/flyers.jpg' %}" class="img_resp w-25"></img>
 
@@ -133,12 +138,12 @@
 
       <div class="row  align-items-center justify-content-center">
         
-        <div class="col-sm-3  offer my-3 mb-sm-3  py-3 box_shadow">
+        <div class="col-sm-3  offer my-3 mb-sm-3  py-3 box_shadow wow  fadeIn" data-wow-duration="3s">
           <p class="text-uppercase">Posters</p>
           <img src="{% static 'michael/poster.jpg' %}" class="img_resp w-50"></img>
 
         </div>
-        <div class="col-sm-3  offer my-3 mb-sm-3 py-3 box_shadow">
+        <div class="col-sm-3  offer my-3 mb-sm-3 py-3 box_shadow wow  fadeIn" data-wow-duration="3s">
           <p class="text-uppercase">Animations</p>
 
           <img src="{% static 'michael/animations.jpg' %}" class="img_resp w-50"></img>
@@ -147,7 +152,7 @@
       </div>
     </div>
 
-    <div class="container-fluid cover py-5">
+    <div class="container-fluid cover py-5 wow  fadeIn" data-wow-duration="3s">
 
 
       <div class="row align-items-center justify-content-center font-weight-normal">
@@ -165,12 +170,12 @@
 
       </div>
     </div>
-    <div class="container-fluid solutions  mb-0 mt-5 mt-md-3 py-5 ">
-      <div class="row align-items-center justify-content-center my-3 pt-5  ">
-        <h3 class="font-weight-bold text-uppercase">Solutions that...</h3>
+    <div class="container-fluid solutions  mb-0 mt-5 mt-md-3 py-5 wow  fadeIn" data-wow-duration="2s">
+      <div class="row align-items-center justify-content-center my-3 pt-5  wow  fadeIn" data-wow-duration="2s">
+        <h3 class="font-weight-bold text-uppercase text-white">Solutions that...</h3>
       </div>
       <div class="row align-items-center justify-content-center pb-5 box_shadow">
-        <div class="col-sm-2 mt-5 mt-md-0 text-center">
+        <div class="col-sm-2 mt-5 mt-md-0 text-center wow  slideInRight" data-wow-duration="2s">
 
           <img src="{% static 'michael/solutions1.png' %}" class="img_resp">
           <h5 class="clip_h3"> <span class="special1">GROW</span></h5>
@@ -178,14 +183,14 @@
 
         </div>
 
-        <div class="col-sm-2 text-center">
+        <div class="col-sm-2 text-center wow  slideInRight" data-wow-duration="3s">
           <img src="{% static 'michael/solutions2.png' %}" class="img_resp">
           <h5 class="clip_h3"><span class="specialblue">ENHANCE</span></h5>
 
 
         </div>
 
-        <div class="col-sm-2 text-center ">
+        <div class="col-sm-2 text-center wow  slideInRight" data-wow-duration="4s">
           <img src="{% static 'michael/solutions1.png' %}" class=" img_resp ">
           <h5 class="clip_h3"><span class="specialgreen">DRIVE SALES</span></h5>
 
@@ -196,9 +201,9 @@
       </div>
     </div>
 
-    <div class="container-fluid people_say_container mt-0 py-5 d9">
+    <div class="container-fluid people_say_container mt-0 py-5 d9 wow  slideInLeft" data-wow-duration="3s">
       <div class="row align-items-center justify-content-center">
-        <div class="col-sm-3 people_col text-md-left py-5 px-5 mx-2 box_shadow">
+        <div class="col-sm-3 people_col text-md-left py-5 px-5 mx-2 box_shadow wow  fadeIn" data-wow-duration="3s">
           <img src="{% static 'michael/person.png' %}" class="img_resp w-50"></img>
 
           <h4 class="people_name text-md-left font-weight-bold">AKua Afriyie</h4>
@@ -208,7 +213,7 @@
             produce brilliant ideas and works
           </p>
         </div>
-        <div class="col-sm-3 people_col py-5 px-5 text-md-left mx-2 box_shadow">
+        <div class="col-sm-3 people_col py-5 px-5 text-md-left mx-2 box_shadow wow  fadeIn" data-wow-duration="3s">
           <img src="{% static 'michael/benjamin.jfif' %}" class="img_resp rounded-circle w-50"></img>
 
           <h4 class="people_name text-md-left font-weight-bold">Benjamin Akyea</h4>
@@ -218,7 +223,7 @@
 
 
         </div>
-        <div class="col-sm-3 people_col py-5 px-5 text-md-left mx-2 box_shadow">
+        <div class="col-sm-3 people_col py-5 px-5 text-md-left mx-2 box_shadow wow  fadeIn" data-wow-duration="3s">
           <img src="{% static 'michael/yawotuo.jfif' %}" class="img_resp rounded-circle w-50" ></img>
 
           <h4 class="people_name text-md-left font-weight-bold">Mr. Yaw Otuo</h4>
@@ -229,7 +234,7 @@
         </div>
       </div>
     </div>
-    <div class="container my-5 py-5 ">
+    <div class="container my-5 py-5 wow  fadeIn" data-wow-duration="3s">
 
 
       <div class="row align-items-center justify-content-center">
