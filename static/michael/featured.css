@@ -1,0 +1,10 @@
+@media screen and (min-width: 770px) {
+    .carousel-inner{
+        min-width: 500px;
+        max-height: 500px;
+    }
+}
+
+.he{
+    background-color: aliceblue;
+}

@@ -6,7 +6,7 @@ body {
    
    background-color: var(--black);
    
-    font-weight: 400;
+    font-weight: 450;
        
 }
 
@@ -15,7 +15,7 @@ body {
     /* --black: rgb(32, 14, 2); */
     --black: #ffd;
 
-    --yellow: #ffd000;
+    --yellow: #b59509;
         /* --yellow: #ffd000; */
 }
 
@@ -173,13 +173,13 @@ body {
 .clipmask_big{
     font-size: 5vw;
     font-weight: 600;
-    color: #ffd000;
+    color: #b59509;
 }
 
 @media screen and (max-width: 400px) {
     .clipmask_big{
         font-weight: 600;
-        color: #ffd000;
+        color: #b59509;
         font-size: 2rem;
     }
 
@@ -188,17 +188,11 @@ body {
 .clip_h3{
     color: var(--yellow);
     color: black;
-    font-weight: 400;
+    font-weight: 450;
+    font-family:Arial, Helvetica, sans-serif
 }
 
-/* @media screen and (max-width: 400px) {
-  
-    .clip_h3{
-        font-size: 1rem;
-        
-    
-    }
-} */
+
 
 .nav_{
     background-color: rgb(8, 8, 65);
