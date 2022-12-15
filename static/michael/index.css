@@ -44,12 +44,19 @@ body {
  
     position: relative;
 }
+.clipmask_pattern{
 
-.clipmask{
-    /* background-image: radial-gradient(rgb(182, 193, 58), #d0d0d0, white); */
 
+   
+background-color: #FFF;
+background-image: url("./patterns/wave1.svg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+    
+    
 }
-
 @media screen and (max-width:770px)
 
 {
@@ -350,9 +357,6 @@ body {
 }
 
 
-.featured_big{
-    padding: 20%;
-}
 
 
 @media screen and (max-width: 770px) {
@@ -372,3 +376,15 @@ body {
         font-size: 1.rem;
     }
 }
+
+.featured_wallpaper { 
+    background-image: url('./patterns/doodad.png');
+}
+
+@media screen and (min-width: 770px) {
+    .carousel-inner{
+        min-width: 500px;
+        max-height: 500px;
+    }
+}
+
