@@ -52,9 +52,7 @@ background-color: #FFF;
 background-image: url("./patterns/wave1.svg");
 background-size: cover;
 background-position: center;
-background-repeat: no-repeat;
-
-    
+background-repeat: no-repeat;  
     
 }
 @media screen and (max-width:770px)
@@ -108,10 +106,7 @@ background-repeat: no-repeat;
   
     filter: brightness(1);
     border: 1px solid #d9d9d9;
-    /* background-image: url('/static/michael/testimony2.png');
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover; */
+
 }
 
 .people_testimony{
@@ -158,20 +153,6 @@ background-repeat: no-repeat;
 
 
 .homeMessage{
-    /* margin: 20%;
-    margin-right: 0%;
-    margin-bottom: 5%;
-    margin-left: 10%;
-    /* padding: 10%; */
-    /* padding-left: 0%;
-    padding-bottom: 10%;
-    margin-top: 5%;
-    padding-top: 7%;
-    padding-right: 0%; */
-    
-     
-    
-
 }
 
 
@@ -222,23 +203,9 @@ background-repeat: no-repeat;
 
 
 .cover{
-  
 
-    /* background-color: white; */
-    /* background-color: transparent; */
-   
-    /* border-top: 5px solid var(--yellow);
-    border-top: 5px solid var(--yellow);
-    border-bottom: 5px solid var(--yellow);
-    border-bottom: 5px solid var(--yellow); */
     background-color: #ffd00015;
-   
-    /* background-image: url('/static/michael/blob-haikei-daabe2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
-     */
     color: var(--yellow);
 
 }
@@ -309,11 +276,6 @@ background-repeat: no-repeat;
     background-image: linear-gradient(to right,white, #ffd000);
 }
 
-.offer_row{
-    /* margin: 5%; */
-    /* color: white; */
-    
-}
 .d9{
     background-color: #d9d9d954;
 }
@@ -376,9 +338,25 @@ background-repeat: no-repeat;
         font-size: 1.rem;
     }
 }
+@media screen  and (max-width: 770px){
+    .featured_wallpaper { 
+        background-color: #FFF;
+        background-image: url("./patterns/wave1.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;  
+    }
+}
 
-.featured_wallpaper { 
-    background-image: url('./patterns/doodad.png');
+@media screen and (max-width: 770px) {
+    .featured_wallpaper_top{
+           
+background-image: url('wave-haikei4.png');
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;  
+    }
 }
 
 @media screen and (min-width: 770px) {
@@ -388,3 +366,6 @@ background-repeat: no-repeat;
     }
 }
 
+.view_height_100{
+    height: 100vw;
+}
