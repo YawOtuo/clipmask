@@ -348,24 +348,3 @@ background-repeat: no-repeat;
     }
 }
 
-@media screen and (max-width: 770px) {
-    .featured_wallpaper_top{
-           
-background-image: url('wave-haikei4.png');
-
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;  
-    }
-}
-
-@media screen and (min-width: 770px) {
-    .carousel-inner{
-        min-width: 500px;
-        max-height: 500px;
-    }
-}
-
-.view_height_100{
-    height: 100vw;
-}
